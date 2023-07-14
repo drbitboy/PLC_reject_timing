@@ -1,5 +1,7 @@
 # PLC_reject_timing
 
+## Exported CCW code is under /versions/ subdirectory
+
 ## Model Assumptions
 
 - PLC programming is primarily about time

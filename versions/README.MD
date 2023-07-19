@@ -2,7 +2,7 @@
 
 ## 20230719_Conveyor_Reject_Micro820-QBB.ccwarc
 - Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
-  - Removed restriction encoder pulse frequencies above 1183Hz
+  - Removed the restriction on encoder pulse frequencies above 1183Hz
   - Default configuration:
     - LOSPEED_OFFSET_SP = 1700
       - bit array index for zero speed (theoretical)

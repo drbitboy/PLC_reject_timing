@@ -1,5 +1,16 @@
 # Versions of the program
 
+## 20230718_Conveyor_Reject_Micro820-QBB.ccwarc
+- Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
+  - Updated per emails from NL, more or less
+    - IP address of Micro820 is final 192.168.0.102 on network 192.168.0.0/24
+    - Added High-Speed Counters (HSCs), both for encoder pulses and for cans
+      - 70Tencoder-count rollover (1.1ky+ @ 2kHz)
+      - Automatic re-configuration of HSCE objects on an HSC error
+      - Pulse/Frequency divider in place (ENCODER_HIPRESET_SP)
+      - Warning if pulse-divided edges are closer than two scan cycles
+      - Linespeed calculation is exponentially filtered instead of using a moving average
+
 ## 20230716_Conveyor_Reject_Micro820-QBB.ccwarc
 - Next cut at port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
   - Updated per email from NL ca. 2023-07016
@@ -14,7 +25,7 @@
 ## 20230714_Conveyor_Reject_Micro820-QBB.ccwarc
   - First cut at port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
   - No HSC code yet
-  - All variables to be interfaced with the GUI/HMI are in Globabl Variables with their original names
+  - All variables to be interfaced with the GUI/HMI are in Global Variables with their original names
     - e.g. LOSPEED_OFFSET_SP not N17:1
 
 ## README.MD

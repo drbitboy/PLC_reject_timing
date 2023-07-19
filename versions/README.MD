@@ -1,5 +1,8 @@
 # Versions of the program
 
+## 20230719_MicroLogix_1100_driver_of_Micro8xx_2080-MOT-HSC.RSS
+- Updated version of MicroLogix 1100 program to emulate encoder pulses using PTO (Pulse Train Output)
+
 ## 20230719_Conveyor_Reject_Micro820-QBB.ccwarc
 - Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
   - Updated ~2023-07-19T17:10:00 EDT
@@ -61,4 +64,4 @@
     - e.g. LOSPEED_OFFSET_SP not N17:1
 
 ## README.MD
-- This file
+

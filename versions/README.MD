@@ -1,5 +1,20 @@
 # Versions of the program
 
+## 20230719_Conveyor_Reject_Micro820-QBB.ccwarc
+- Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
+  - Removed restriction encoder pulse frequencies above 1183Hz
+  - Default configuration:
+    - LOSPEED_OFFSET_SP = 1700
+      - bit array index for zero speed (theoretical)
+    - HISPEED_OFFSET_SP = 990
+      - bit array index for 710 "linespeed" ???-per-minute
+        - ≡ encoder pulse frequency of 1183.333Hz
+    - ENCODER_HIPRESET_SP = 25
+      - Pulse/frequency divisor, sets number of pulses per bit array element
+      - 2000Hz/(25pulse/element) = 80element/s
+    - REJECTOR_DURATION_SP = 75
+      - Reject pusher solenoid dwell time, ms
+
 ## 20230718_Conveyor_Reject_Micro820-QBB.ccwarc
 - Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
   - Updated per emails from NL, more or less

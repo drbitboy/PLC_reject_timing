@@ -2,6 +2,9 @@
 
 ## 20230719_Conveyor_Reject_Micro820-QBB.ccwarc
 - Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
+  - Updated ~2023-07-19T17:10:00 EDT
+    - Add global count DINTs to CTUs' CV pins in routine LAD_5_IO_COUNTER
+    - Made the reset count command reset the HSCs in routine Encoder_inputs
   - Updated ~2023-07-19T10:30:00 EDT
     - Fixed the zero-valued PVs in LAD_5_IO_COUNTER
   - Updated ~2023-07-19T10:30:00 EDT

@@ -36,7 +36,7 @@
         - Reject pusher solenoid dwell time, ms
 
 ## 20230718_Conveyor_Reject_Micro820-QBB.ccwarc
-- Latest version is in commit [f0c86c3](https://github.com/drbitboy/PLC_reject_timing/tree/f0c86c3f046cd207cc0be627180190901462b6c4)
+- Latest version is in commit [f0c86c3](https://github.com/drbitboy/PLC_reject_timing/tree/f0c86c3f046cd207cc0be627180190901462b6c4/versions)
 - Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
   - Updated per emails from NL, more or less
     - IP address of Micro820 is final 192.168.0.102 on network 192.168.0.0/24
@@ -48,20 +48,20 @@
       - Linespeed calculation is exponentially filtered instead of using a moving average
 
 ## 20230716_Conveyor_Reject_Micro820-QBB.ccwarc
-- Latest version is in commit ea8e6328a08dc2eef8679c0d985ab3c060da7e83
+- Latest version is in commit [ea8e632](https://github.com/drbitboy/PLC_reject_timing/tree/ea8e6328a08dc2eef8679c0d985ab3c060da7e83/versions)
 - Second cut at port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
   - Updated per email from NL ca. 2023-07-16
     - IP address of Micro820 is now 192.168.0.102 on network 192.168.0.0/23
     - Added PVs to CTU instruction in LAD 5
 
 ## 20230715_IO_Check_Latchmoor_Micro820.ccwarc and 20230715_MicroLogix_1100_driver_of_Micro8xx_2080-MOT-HSC.RSS
-- Latest versions are in commit ea8e6328a08dc2eef8679c0d985ab3c060da7e83
+- Latest versions are in commit [ea8e632](https://github.com/drbitboy/PLC_reject_timing/tree/ea8e6328a08dc2eef8679c0d985ab3c060da7e83/versions)
 - Test harness
   - Connect O/2 on MicroLogix to A+ on Micro820
   - Connect O/2 Common to A- (and to ground) on Micro820
 
 ## 20230714_Conveyor_Reject_Micro820-QBB.ccwarc
-- Latest version is in commit d2f297ec6200262c4a4a4fb18605095bc3468c88
+- Latest version is in commit [d2f297e](https://github.com/drbitboy/PLC_reject_timing/tree/d2f297ec6200262c4a4a4fb18605095bc3468c88/versions)
 - First cut at port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
   - No HSC code yet
   - All variables to be interfaced with the GUI/HMI are in Global Variables with their original names

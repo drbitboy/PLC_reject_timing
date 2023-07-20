@@ -34,9 +34,10 @@
 - Adequate resolution in the PLC encoder counting and bit-shift array
 
 ## Implications of No Slip and Fixed Geometry model assumptions
-- The position of a failed can when the reject signal from the PLC is equal to
-  - the position of the pusher's initial contact with the fail can,
-  -  minus the product ((ΔTpusher + ΔTinspect), s ×linespeed, inch/s)
+- The distance a failed can travels between when the PLC receiving the failed-can input signal, and when the reject signal from the PLC should be sent, is equal to
+  - the distance from the inspection trigger prox to where the pusher's initially contacts the fail can,
+  - minus the product ((ΔTpusher + ΔTinspect), s ×linespeed, inch/s)
+  - and that shortened distance is what is modeled in the bit-shift array elements' positions, from element 0 to some element N.
 
 - The value of the index in the bit-shift array where a 1-bit should trigger the reject
    signal from the PLC is linear with the calculated RPM, so

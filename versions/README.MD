@@ -47,21 +47,27 @@
       - Linespeed calculation is exponentially filtered instead of using a moving average
 
 ## 20230716_Conveyor_Reject_Micro820-QBB.ccwarc
-- Next cut at port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
-  - Updated per email from NL ca. 2023-07016
+- Latest version is in commit ea8e6328a08dc2eef8679c0d985ab3c060da7e83
+- Second cut at port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
+  - Updated per email from NL ca. 2023-07-16
     - IP address of Micro820 is now 192.168.0.102 on network 192.168.0.0/23
     - Added PVs to CTU instruction in LAD 5
 
 ## 20230715_IO_Check_Latchmoor_Micro820.ccwarc and 20230715_MicroLogix_1100_driver_of_Micro8xx_2080-MOT-HSC.RSS
-- Test harness; 2023-07-15
+- Latest versions are in commit ea8e6328a08dc2eef8679c0d985ab3c060da7e83
+- Test harness
   - Connect O/2 on MicroLogix to A+ on Micro820
   - Connect O/2 Common to A- (and to ground) on Micro820
 
 ## 20230714_Conveyor_Reject_Micro820-QBB.ccwarc
-  - First cut at port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
+- Latest version is in commit d2f297ec6200262c4a4a4fb18605095bc3468c88
+- First cut at port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
   - No HSC code yet
   - All variables to be interfaced with the GUI/HMI are in Global Variables with their original names
     - e.g. LOSPEED_OFFSET_SP not N17:1
 
-## README.MD
+## TODO.MD
+- Suggestions for future work
 
+## README.MD
+- This file

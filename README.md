@@ -3,7 +3,6 @@
 ## Exported CCW code is under /versions/ subdirectory
 
 ## Model Assumptions
-
 - PLC programming is primarily about time
 
 - No Slip
@@ -20,18 +19,21 @@
     - from the position of a can at the camera inspection station at the time of that can's fail detection,
     - to the position of a failed can where the reject pusher initially contacts that can to reject it
 
-- Fixed Pusher Dynamics
-  - Pusher movement and timing are independent of conveyor speed
-  - There is a positive time delay,  ΔTpusher, between reject signal from the PLC
-     and the moment when the reject pusher initially contacts a failed can
-  - The reject signal from the PLC must be sent at that ΔTpusher offset time before a
-     failed can reaches the position of the pusher's initial contact with the failed can
+- Fixed Time Dynamics
+  - Inspection camera
+    - Camera timing relative to inspection proximity sensor will be variable, but stochastic with a consistent mean and a small variance
+    - There is a positive time delay, ΔTinspect, between the time the prox sensor detects a can entering the fixed position of the inspection until the camera returns a failed-can signal to the PLC
+  - Pusher
+    - Pusher movement and timing are independent of conveyor speed
+    - There is a positive time delay, ΔTpusher, between the reject signal from the PLC and the moment when the reject pusher initially contacts a failed can
+  - The reject signal from the PLC must be sent at that (ΔTpusher + ΔTinspect) offset time before a failed can reaches the position of the pusher's initial contact with the failed can
 
 - Adequate resolution in the PLC encoder counting and bit-shift array
+
 ## Implications of No Slip and Fixed Geometry model assumptions
 - The position of a failed can when the reject signal from the PLC is equal to
   - the position of the pusher's initial contact with the fail can,
-  -  minus the product (ΔTpusher, s × can speed, m/s)
+  -  minus the product ((ΔTpusher + ΔTinspect), s ×can speed, m/s)
 
 - The value of the index in the bit-shift array where a 1-bit should trigger the reject
    signal from the PLC is linear with the calculated RPM, so

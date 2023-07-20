@@ -36,7 +36,7 @@
         - Reject pusher solenoid dwell time, ms
 
 ## 20230718_Conveyor_Reject_Micro820-QBB.ccwarc
-- Latest version is in commit [f0c86c3](https://github.com/drbitboy/PLC_reject_timing/commit/f0c86c3f046cd207cc0be627180190901462b6c4)
+- Latest version is in commit [f0c86c3](https://github.com/drbitboy/PLC_reject_timing/tree/f0c86c3f046cd207cc0be627180190901462b6c4)
 - Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
   - Updated per emails from NL, more or less
     - IP address of Micro820 is final 192.168.0.102 on network 192.168.0.0/24

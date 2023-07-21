@@ -1,9 +1,22 @@
 # Versions of the program
 
+## 20230721_Conveyor_Reject_Micro820-QBB.ccwarc
+- Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
+  - Updated ~2023-07-21:02:00 EDT
+  - Added GUI_* globals, written by GUI/HMI
+  - Cans HSC always runs, not dependent on USE_ENCODER/HSC_ENABLE
+  - Global HSC_TRIGGER_COUNT for access by GUI/HMI
+  - Left HSC rollover at (1<<46)
+  - Improved encoder bit-shift dwell outputs to avoid multiple rejects
+  - Refactored two LAD 4 routines into several subroutines by function
+  - Rearranged global variables
+  - Improved comments
+
 ## 20230719_MicroLogix_1100_driver_of_Micro8xx_2080-MOT-HSC.RSS
 - Updated version of MicroLogix 1100 program to emulate encoder pulses using PTO (Pulse Train Output)
 
 ## 20230719_Conveyor_Reject_Micro820-QBB.ccwarc
+- Latest version is in commit [c21a045](https://github.com/drbitboy/PLC_reject_timing/tree/c21a0455491781730c861738f53658d103c28c1a/versions)
 - Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
   - Updated ~2023-07-19T17:10:00 EDT
     - Add global count DINTs to CTUs' CV pins in routine LAD_5_IO_COUNTER

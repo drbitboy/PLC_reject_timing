@@ -1,6 +1,12 @@
 # Versions of the program
 
+## 20230722_Conveyor_Reject_Micro820-QBB.ccwarc
+- Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
+  - Updated ~2023-07-22:18450 EDT
+  - Convert LAD_9_Reject_Timers to use TOFs and F_TRIGs instead of TONs
+
 ## 20230721_Conveyor_Reject_Micro820-QBB.ccwarc
+- Latest version is in commit [0d64e72](https://github.com/drbitboy/PLC_reject_timing/tree/0d64e72e23b392d15845c7aed1f3b85f47fde02a/versions)
 - Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
   - Updated ~2023-07-21:02:00 EDT
   - Added GUI_* globals, written by GUI/HMI

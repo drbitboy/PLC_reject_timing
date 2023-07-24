@@ -86,8 +86,8 @@
   - All variables to be interfaced with the GUI/HMI are in Global Variables with their original names
     - e.g. LOSPEED_OFFSET_SP not N17:1
 
-## TODO.MD
+## TODO.md
 - Suggestions for future work
 
-## README.MD
+## README.md
 - This file

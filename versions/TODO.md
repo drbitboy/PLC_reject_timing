@@ -19,7 +19,8 @@
   - some variables' values are written in more than one place,
     - with the later overwriting the value from the earlier.
 - Refactor the 112 timers in routine LAD_9_Reject_Timers to use the bitshift array
-- Convert TONs that use TT_... bits for duration into TOFs
+- Convert TONs that use TT_... bits for duration into TOFs (see /edge_cases/)
+- Put TOF-like logic into a loop (see /edge_cases/)
 - Document the whole LINESTOP Normally Closed ecosystem, which breaks my brain every time I look at it.
 - Check that all datatypes make sense and are consistent (UDINT, UINT, DINT, LINT, etc.)
 - Replace [XIC bit CTU ...] instances with a single-input UDFB

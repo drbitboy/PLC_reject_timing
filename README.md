@@ -53,3 +53,14 @@
          - Measured motor speed (from encoder counts vs. time)
          - highest and lowest operational speeds of the motor
          - HISPEED_OFFSET_SP and LOSPEED_OFFSET_SP
+
+## Manifest
+
+- versions/
+  - Versions of ports of original MicroLogix 1100/RSLogix 500 code to Micro820/CCW, plus some other test code
+  - See versions/README.md for details
+
+- edge_case/
+  - Demonstration of MicroLogix 1100/RSLogix 500 edge cases in failed-can signal timing that cause original code to fail
+  - Also two solutions
+  - See edge_case/README.md, plus comments in code, for details

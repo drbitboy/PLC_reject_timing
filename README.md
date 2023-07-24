@@ -56,6 +56,10 @@
 
 ## Manifest
 
+- original/
+  - Original code and documentation
+  - Annotated (i.e. enhanced comments) version of the original code
+
 - versions/
   - Versions of ports of original MicroLogix 1100/RSLogix 500 code to Micro820/CCW, plus some other test code
   - See versions/README.md for details

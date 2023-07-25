@@ -1,8 +1,15 @@
 # Versions of the program
 
-## 20230722_Conveyor_Reject_Micro820-QBB.ccwarc
+## 20230725_Latchmoor_Conveyor_Reject_Micro820-QBB.ccwarc
 - Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
-  - Updated ~2023-07-22:18450 EDT
+  - Updated ~2025-07-22T10:10 EDT
+  - Fix typo:  **XIO DISABLE_CAN_TRIGGER_HSC** change to **XIC ...** on Rung 8 in routine Encoder_inputs
+  - This is the final Latchmoor version; Ned took over the code after this
+
+## 20230722_Conveyor_Reject_Micro820-QBB.ccwarc
+- Latest version is in commit [804f0a2](https://github.com/drbitboy/PLC_reject_timing/tree/804f0a2858170508dad0f6b69eb44ef306446557/versions)
+- Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
+  - Updated ~2023-07-22T18:45 EDT
   - Convert LAD_9_Reject_Timers to use TOFs and F_TRIGs instead of TONs
 
 ## 20230721_Conveyor_Reject_Micro820-QBB.ccwarc

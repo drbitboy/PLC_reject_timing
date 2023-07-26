@@ -2,7 +2,7 @@
 
 ## 20230725_Latchmoor_Conveyor_Reject_Micro820-QBB.ccwarc
 - Full working port of reject code from MicroLogix 1100/RSLogix 500 to Micro820/CCW
-  - Updated ~2025-07-22T10:10 EDT
+  - Updated ~2022-07-25T10:10 EDT
   - Fix typo:  **XIO DISABLE_CAN_TRIGGER_HSC** change to **XIC ...** on Rung 8 in routine Encoder_inputs
   - This is the final Latchmoor version; Ned took over the code after this
 
